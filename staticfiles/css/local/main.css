@@ -1,3 +1,12 @@
+/* -------------------------- :IMPORT STYLES; --------------------------  */
+
+@import url('../var/var.css');
+
+@font-face {
+  font-family:'navbar';
+  src: url(../../fonts/Poppins-Medium.ttf);
+}
+
 /* -------------------------- :IMPORTANT STYLES; -------------------------- */
 
 *{box-sizing: border-box;}
@@ -14,8 +23,11 @@ a{color:inherit; text-decoration:none !important; cursor: pointer;}
 
 a:hover{color:inherit;}
 
-/* --------------------- :ALL STYLES; --------------------- */
+body{width:100%;
+    height:auto;
+    background-color: var(--first);}
 
+/* --------------------- :ALL STYLES; --------------------- */
 
 /* START CONTAINERS */
 
@@ -29,18 +41,107 @@ a:hover{color:inherit;}
               padding-right: 15px; 
               margin-left: auto;
               margin-right: auto; 
-              height: auto; 
-              margin-top:10px;}
+              height: auto; }
 
 /* END CONTAINERS */
 
+/* START HEADER */
+
+.section_navbar{width:100%;
+                height:auto;}
+
+.navbar{width:100%;
+        height:70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;}
+
+.navbar_left_logo a img{width:140px;
+                        height:45px;}
+
+.navbar_left,.navbar_right{width: auto;}
+
+.navbar_right ul li{display:inline-block; 
+                    color: var(--w);
+                    font-size:20px;
+                    font-family: 'navbar'; 
+                    transition: color 0.5s;}
+
+.navbar_right ul li a { padding:10px 17px;}
+
+.navbar_right ul li:last-child a{padding-right:10px;}
+
+.navbar_right ul li:hover{color:var(--second);}
+
+.navbar_left_control{display: none; 
+                     width: auto;
+                     height: auto;
+                     padding:10px;
+                     cursor: pointer;}
+
+.line:first-child{margin-top:0px;
+                  height:3.2px;}
+
+.line{width:30px;
+      height:3px;
+      background-color: black;
+      margin-top:5px;
+      border-radius:10px;
+      transition: margin-top 0.5s;}
+
+
+
+.for_navbar_control{margin-top:-3px;
+                    transition: margin-top 0.5s;}
+/* END HEADER  */
+
 /* --------------------- :MEDIAS MAX-WIDTH; --------------------- */
 
-@media(max-width: 1200px){}
+@media(max-width: 1300px){
+  .navbar_right ul li{font-size:18px;}
+  .navbar_right ul li a{padding:5px 12px;}
+  .navbar{height:60px;}
+  }
 
-@media(max-width: 992px){}
+@media(max-width: 1200px){
+  .navbar_left_logo a img{width:120px;
+                          height:40px;}
+  .navbar_right ul li{font-size:17px;}
+  .navbar_right ul li a{padding:5px 10px;}
+}
 
-@media(max-width: 768px){}
+@media(max-width: 992px){
+  .navbar{display: inherit; 
+          height: auto;}
+  .navbar_left{height:60px; 
+               display: flex; 
+               justify-content: space-between;
+               align-items: center;
+               padding-left: 10px;
+               padding-right: 10px;}
+  .navbar_right ul li{display:block; 
+                      border-radius: 15px;
+                      padding-left:10px;
+                      transition: background-color 0.5s;}
+  .navbar_right ul li:hover{background-color: gray;}
+  .navbar_right ul li a{display: block; 
+                        width:100%; 
+                        padding:10px 0px 11px 0px;}
+  .navbar_left_control,.navbar_left_logo{width: auto;}
+  .navbar_left_control{display:block;}
+  .navbar_right{-moz-transition: height .5s;
+                -ms-transition: height .5s;
+                -o-transition: height .5s;
+                -webkit-transition: height .5s;
+                transition: height .5s;
+                height: 0;
+                overflow: hidden;}
+}
+
+@media(max-width: 768px){
+  .navbar_left{padding-left: 0px;
+              padding-right: 0px;}
+}
 
 @media(max-width: 576px){}
 
@@ -63,55 +164,65 @@ a:hover{color:inherit;}
   .container_smf{width:91%;}
 }
 @media (min-width: 768px){
-  .container_lg{max-width: 960px;}
-  .container_md{max-width: 880px;}
+  .container_lg{max-width: 930px;}
+  .container_md{max-width: 870px;}
   .container_sm{max-width: 720px;}
   .container_lgf{width:99%;}
   .container_mdf{width:95%;}
   .container_smf{width:90%;}
 }
 @media (min-width: 992px){
-  .container_lg{max-width: 1140px;}
-  .container_md{max-width: 1050px;}
-  .container_sm{max-width: 960px;}
+  .container_lg{max-width: 1110px;}
+  .container_md{max-width: 1020px;}
+  .container_sm{max-width: 940px;}
   .container_lgf{width:99%;}
   .container_mdf{width:94%;}
   .container_smf{width:89%;}
 }
 @media (min-width: 1200px){
-  .container_lg{max-width: 1760px;}
-  .container_md{max-width: 1300px;}
-  .container_sm{max-width: 1140px;}
+  .container_lg{max-width: 1300px;}
+  .container_md{max-width: 1200px;}
+  .container_sm{max-width: 1040px;}
   .container_lgf{width:98%;}
   .container_mdf{width:93%;}
   .container_smf{width:88%;}
 }
 
 @media(min-width:1450px){
-  .container_lg{max-width: 1760px;}
-  .container_md{max-width: 1470px;}
-  .container_sm{max-width: 1320px;}
+  .container_lg{max-width: 1450px;}
+  .container_md{max-width: 1320px;}
+  .container_sm{max-width: 1200px;}
   .container_lgf{width:97%;}
   .container_mdf{width:92%;}
   .container_smf{width:87%;}
 }
 
 @media(min-width:1650px){
-  .container_lg{max-width: 1760px;}
-  .container_md{max-width: 1550px;}
-  .container_sm{max-width: 1370px;}
+  .container_lg{max-width: 1650px;}
+  .container_md{max-width: 1500px;}
+  .container_sm{max-width: 1320px;}
   .container_lgf{width:96%;}
   .container_mdf{width:91%;}
   .container_smf{width:86%;}
+  .navbar{height:85px;}
+  .navbar_left_logo a img{width:160px;
+                          height:55px;}
+  .navbar_right ul li{font-size:22px;}
+  .navbar_right ul li a{padding:7px 20px;}
 }
 
 @media(min-width:1900px){
-  .container_lg{max-width: 1760px;}
+  .container_lg{max-width: 1700px;}
   .container_md{max-width: 1600px;}
   .container_sm{max-width: 1420px;}
   .container_lgf{width:95%;}
   .container_mdf{width:90%;}
   .container_smf{width:85%;}
+  .navbar{height:100px;}
+  .navbar_left_logo a img{width:180px;
+                          height:60px;}
+  .navbar_right ul li{font-size:24px;}
+  .navbar_right ul li a{padding:10px 23px;}
 }
 
 /* STYLES FOR SCROLLBAR */

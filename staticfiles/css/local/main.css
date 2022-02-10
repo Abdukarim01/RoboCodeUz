@@ -100,12 +100,12 @@ body{width:100%;
 @media(max-width: 1300px){
   .navbar_right ul li{font-size:18px;}
   .navbar_right ul li a{padding:5px 12px;}
-  .navbar{height:60px;}
+  /* .navbar{height:60px;} */
   }
 
 @media(max-width: 1200px){
-  .navbar_left_logo a img{width:120px;
-                          height:40px;}
+  /* .navbar_left_logo a img{width:120px;
+                          height:40px;} */
   .navbar_right ul li{font-size:17px;}
   .navbar_right ul li a{padding:5px 10px;}
 }
@@ -113,7 +113,7 @@ body{width:100%;
 @media(max-width: 992px){
   .navbar{display: inherit; 
           height: auto;}
-  .navbar_left{height:60px; 
+  .navbar_left{height:70px; 
                display: flex; 
                justify-content: space-between;
                align-items: center;

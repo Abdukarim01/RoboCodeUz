@@ -47,8 +47,8 @@ body{width:100%;
 
 /* START HEADER */
 
-.section_navbar{width:100%;
-                height:auto;}
+/* start navbar  */
+.section_navbar{width:100%; height:auto;}
 
 .navbar{width:100%;
         height:70px;
@@ -56,8 +56,7 @@ body{width:100%;
         align-items: center;
         justify-content: space-between;}
 
-.navbar_left_logo a img{width:140px;
-                        height:45px;}
+.navbar_left_logo a img{width:140px; height:45px;}
 
 .navbar_left,.navbar_right{width: auto;}
 
@@ -79,8 +78,7 @@ body{width:100%;
                      padding:10px;
                      cursor: pointer;}
 
-.line:first-child{margin-top:0px;
-                  height:3.2px;}
+.line:first-child{margin-top:0px; height:3.2px;}
 
 .line{width:30px;
       height:3px;
@@ -89,10 +87,31 @@ body{width:100%;
       border-radius:10px;
       transition: margin-top 0.5s;}
 
-
-
 .for_navbar_control{margin-top:-3px;
                     transition: margin-top 0.5s;}
+
+/* start navbar  */
+
+/* start header face */
+
+.section_header_face{width:100%; height:auto;}
+
+.header_face_items{width:100%;
+                   height:auto;
+                   display: flex;
+                   flex-direction: row;
+                   align-items: center;}
+
+.face_left_item,.face_right_item{width: auto; }
+
+
+
+
+
+
+
+/* end  header face */
+
 /* END HEADER  */
 
 /* --------------------- :MEDIAS MAX-WIDTH; --------------------- */

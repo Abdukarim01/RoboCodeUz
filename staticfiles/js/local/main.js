@@ -32,3 +32,15 @@ function controlnavbar() {
 }
 
 /* END NAVBAR CONTROLR */
+
+/* START TYPER SLIDE */
+var typerslide = new Swiper(".typer_slide", {
+    slidesPerView: 1,
+    freeMode: true,
+    cssMode: true,
+    autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+});
+/* END TYPER SLIDE */

@@ -294,7 +294,7 @@ body{width:100%;
   .typer_text{padding-left:5%;}
   .typer_text{margin: 10px 0px;}
 
-  .face_left_item{flex:480px; min-width:480px; height:480px;}
+  .face_left_item{flex:480px; min-width:480px; height:480px; margin-top:20px; margin-bottom:30px;}
   .face_circle1{width:480px;
                 height:480px;}
   .face_circle2{width:420px;
@@ -316,27 +316,53 @@ body{width:100%;
 @media(max-width: 576px){
   .typer_text{font-size:30px; height:35px; }
   .face_text{font-size:25px; margin: 0;}
-  .face_left_item{ flex:380px; max-width:380px; height:380px; padding-left: 10%; }
+  .face_left_item{transform: scale(0.72);}
+  .face_right_item{padding-left:10%; margin-top:10px;}
+  .typer_text{padding-left:10%;}
 
-  .face_circle1{width:380px;
-                height:380px;}
-  .face_circle2{width:330px;
-                height:330px;
-                margin-top:25px;
-                margin-left:25px;}
-  .face_circle3{width:290px;
-                height:290px;
-                margin-left:45px;
-                margin-top:45px;}
-  .face_circle4{width:260px;
-                height:260px;
-                margin-left:60px;
-                margin-top:60px;}
-  .oneimg{position: absolute; margin-top:80px;}
-  .oneimg img{width:70px;}
 }
 
-@media(max-width: 400px){}
+@media(max-width: 400px){
+ .face_left_item{flex:300px; min-width:300px; height:300px; transform: scale(1); padding-left: 7%;}
+  .face_circle1{width:300px;
+                height:300px;}
+  .face_circle2{width:270px;
+                height:270px;
+                margin-top:15px;
+                margin-left:15px;}
+  .face_circle3{width:240px;
+                height:240px;
+                margin-left:30px;
+                margin-top:30px;}
+  .face_circle4{width:210px;
+                height:210px;
+                margin-left:45px;
+                margin-top:45px;}
+  .oneimg{position: absolute; margin-top:40px;}
+  .oneimg img{width:50px;}
+  .face_right_item{padding-left:0%;;}
+  .typer_text{padding-left:10%;}
+}
+
+@media(max-width: 350px){
+ .face_left_item{flex:270px; min-width:270px; height:270px; transform: scale(1); padding-left: 3%; overflow: hidden;}
+  .face_circle1{width:270px;
+                height:270px;}
+  .face_circle2{width:250px;
+                height:250px;
+                margin-top:10px;
+                margin-left:10px;}
+  .face_circle3{width:230px;
+                height:230px;
+                margin-left:20px;
+                margin-top:20px;}
+  .face_circle4{width:210px;
+                height:210px;
+                margin-left:30px;
+                margin-top:30px;}
+  .oneimg{position: absolute; margin-top:15px;}
+  
+}
 
 /* --------------------- :MEDIAS MIN-WIDTH; --------------------- */
 

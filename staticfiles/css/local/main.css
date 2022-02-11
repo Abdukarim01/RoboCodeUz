@@ -367,7 +367,7 @@ body{width:100%;
   .oneimg img{width:50px;}
   .face_right_item{padding-left:0%;;}
   .typer_text{padding-left:10%;}
-  .sign_up_course_btn_mobile button{width:100%; font-size:15px;margin:10px 0px 0px 0px;}
+  .sign_up_course_btn_mobile button{width:100%; font-size:15px;margin:10px 0px 20px 0px;}
 }
 
 @media(max-width: 350px){

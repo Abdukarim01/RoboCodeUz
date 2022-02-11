@@ -194,9 +194,32 @@ body{width:100%;
                                 box-sizing: border-box;}
 
 
+.sign_up_course_btn_mobile button{padding:8px 0px;
+                                  font-family: 'navbar';
+                                  display: none;
+                                  margin: 20px auto 15px auto;
+                                  font-size:20px;
+                                  border-radius:15px;
+                                  border:1px solid white;
+                                  background-color: white;
+                                  cursor: pointer;
+                                  transition: background-color 0.5s;
+                                  transition: color 0.5s;}
+
+.sign_up_course_btn_mobile button:hover{background-color: transparent;    
+                                color: var(--second);
+                                border:1px solid var(--second);
+                                box-sizing: border-box;}
+
 /* end  header face */
 
 /* END HEADER  */
+
+/* START MAIN  */
+
+
+
+/* END MAIN  */
 
 /* --------------------- :MEDIAS MAX-WIDTH; --------------------- */
 
@@ -284,7 +307,7 @@ body{width:100%;
   .face_right_item{padding-left:50%;}
   .typer_text{padding-left:15%;}
   .face_left_item{flex:500px; max-width:500px; height:500px; padding: 0;}
-  
+  .sign_up_course_btn_mobile button{display: block; width:500px;}
 }
 
 @media(max-width: 768px){
@@ -311,6 +334,7 @@ body{width:100%;
                 margin-top:80px;}
   .oneimg{position: absolute; margin-top:70px;}
   .oneimg img{width:80px;}
+  .sign_up_course_btn_mobile button{width:80%; }
 }
 
 @media(max-width: 576px){
@@ -319,6 +343,7 @@ body{width:100%;
   .face_left_item{transform: scale(0.72);}
   .face_right_item{padding-left:10%; margin-top:10px;}
   .typer_text{padding-left:10%;}
+  .sign_up_course_btn_mobile button{width:100%; font-size:15px;margin:-50px auto 20px auto;}
 
 }
 
@@ -342,6 +367,7 @@ body{width:100%;
   .oneimg img{width:50px;}
   .face_right_item{padding-left:0%;;}
   .typer_text{padding-left:10%;}
+  .sign_up_course_btn_mobile button{width:100%; font-size:15px;margin:10px 0px 0px 0px;}
 }
 
 @media(max-width: 350px){

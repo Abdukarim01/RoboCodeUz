@@ -482,10 +482,10 @@ body{width:100%;
   .course_container:nth-child(2n+0) .course_texts_block .course_title p{display: none;}
  
   .course_container:nth-child(2n+1) .course_texts_block .course_btn a button{display: block;
-                                                                             margin: auto; font-size: 17px;
+                                                                             margin: auto; font-size: 15px;
                                                                              padding:10px 55px;}
   .course_container:nth-child(2n+0) .course_texts_block .course_btn a button{display: block; 
-                                                                             margin: auto; font-size: 17px;
+                                                                             margin: auto; font-size: 15px;
                                                                              padding:10px 55px;}
   .course_container{padding:30px 20px;}
   .corse_img1 a img{width:100%;}

@@ -494,6 +494,7 @@ body{width:100%;
 
   .corse_img1{margin-right:-23%; z-index: 1;}
 .corse_img3{margin-left:-15%; margin-top:10%;}
+.section_courses{width:100%; height:auto; margin-top:30px;}
 }
 
 @media(max-width: 576px){

@@ -44,3 +44,22 @@ var typerslide = new Swiper(".typer_slide", {
         },
 });
 /* END TYPER SLIDE */
+
+/* COURSES ANIMATE */
+
+window.addEventListener('scroll', function() {
+    let element = document.querySelectorAll(".course_container");
+    element.forEach( (e)=>{
+    var position = e.getBoundingClientRect();
+        // checking for partial visibility
+        if(position.top < window.innerHeight - 150) {
+           e.style = "transform:translateX(0%); transition: all 1s; opacity: 1;"
+        }else{
+           e.style = ''
+        }
+       
+    })
+});
+
+
+/* ENS COURSES ANIMATE*/

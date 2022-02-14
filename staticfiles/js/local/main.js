@@ -39,7 +39,7 @@ var typerslide = new Swiper(".typer_slide", {
     freeMode: true,
     cssMode: true,
     autoplay: {
-          delay: 3500,
+          delay: 6000,
           disableOnInteraction: false,
         },
 });
@@ -47,19 +47,50 @@ var typerslide = new Swiper(".typer_slide", {
 
 /* COURSES ANIMATE */
 
-window.addEventListener('scroll', function() {
-    let element = document.querySelectorAll(".course_container");
-    element.forEach( (e)=>{
-    var position = e.getBoundingClientRect();
-        // checking for partial visibility
-        if(position.top < window.innerHeight - 150) {
-           e.style = "transform:translateX(0%); transition: all 1s; opacity: 1;"
-        }else{
-           e.style = ''
-        }
-       
-    })
-});
 
+
+window.addEventListener('scroll', function() {
+            function animfunctionmedia(y) {
+                    if (y.matches) {  
+                        let element = document.querySelectorAll(".course_container");
+                        element.forEach( (e)=>{
+                        var position = e.getBoundingClientRect();
+                        // checking for partial visibility
+                        if(position.top < window.innerHeight - 250) {
+                        e.style = "transform:translateX(0%); transition: all 1s; opacity: 1;"
+                        }else{
+                        e.style = ''
+                        }
+
+                        })
+                    } 
+            }  
+
+            /* FOR MEDIA */
+
+            var y = window.matchMedia("(max-width: 768px)")
+            animfunctionmedia(y) 
+            y.addListener(animfunctionmedia)
+
+            function animfunctionmedia2(z) {
+                    if (z.matches) {  
+                        let element = document.querySelectorAll(".course_container");
+                        element.forEach( (e)=>{
+                        var position = e.getBoundingClientRect();
+                        // checking for partial visibility
+                        if(position.top < window.innerHeight - 200) {
+                        e.style = "transform:translateX(0%); transition: all 1s; opacity: 1;"
+                        }else{
+                        e.style = ''
+                        }
+
+                        })
+                    } 
+            }  
+
+            var z = window.matchMedia("(min-width: 768px)")
+            animfunctionmedia2(z) 
+            z.addListener(animfunctionmedia2)
+});
 
 /* ENS COURSES ANIMATE*/

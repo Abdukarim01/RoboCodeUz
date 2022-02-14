@@ -354,9 +354,33 @@ body{width:100%;
                           margin-bottom:15px;}
 
 
-.course_container:nth-child(2n+1) .course_text_title_mobile{color: var(--w);}
-.course_container:nth-child(2n+0) .course_text_title_mobile{color: var(--third);}
+.course_container:nth-child(2n+1) .course_text_title_mobile{color: var(--w); margin-bottom:30px;}
+.course_container:nth-child(2n+0) .course_text_title_mobile{color: var(--third); margin-bottom:30px;}
 /* end courses */
+
+/* start companies */
+
+.section_companies{margin-bottom: 10vw;}
+
+.company_container{display: flex;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+                  }
+
+.company_block{padding:0px 15px;flex:25%; width:25%; }
+
+.company{width:100%;
+        height:15vw;
+        background-color: var(--w);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius:12px;
+        object-fit: center;}
+
+
+.company:hover img{transform: scale(1.05); transition: transform 0.5s;}
+/* end companies  */
 
 /* END MAIN  */
 
@@ -475,9 +499,9 @@ body{width:100%;
 
 .course_container:nth-child(2n+0) .course_texts_block .course_body p{font-size: 16px;}
 
-.course_container:nth-child(2n+1) .course_texts_block .course_btn a button{font-size: 15px;padding:8px 40px;}
+.course_container:nth-child(2n+1) .course_texts_block .course_btn a button{font-size: 17px;padding:8px 40px;}
 
-.course_container:nth-child(2n+0) .course_texts_block .course_btn a button{font-size: 15px;padding:8px 40px;}
+.course_container:nth-child(2n+0) .course_texts_block .course_btn a button{font-size: 17px;padding:8px 40px;}
 
 }
 
@@ -515,10 +539,10 @@ body{width:100%;
   .course_container:nth-child(2n+0) .course_texts_block .course_title p{display: none;}
  
   .course_container:nth-child(2n+1) .course_texts_block .course_btn a button{display: block;
-                                                                             margin: auto; font-size: 15px;
+                                                                             margin: auto; font-size: 17px;
                                                                              padding:10px 55px;}
   .course_container:nth-child(2n+0) .course_texts_block .course_btn a button{display: block; 
-                                                                             margin: auto; font-size: 15px;
+                                                                             margin: auto; font-size: 17px;
                                                                              padding:10px 55px;}
   .course_container{padding:30px 20px;}
   .corse_img1 a img{width:100%;}
@@ -531,6 +555,16 @@ body{width:100%;
 .corse_img3{margin-left:-15%; margin-top:10%;}
 .section_courses{width:100%; height:auto; margin-top:30px;}
 
+.course_container:nth-child(2n+1) .course_texts_block .course_body p{font-size: 12px;}
+
+
+.course_container:nth-child(2n+0) .course_texts_block .course_body p{font-size: 12px;}
+
+.course_text_title_mobile{font-size:24px;}
+
+.company_block{flex:50%; width:50%; padding:5px;}
+
+.company{height:30vw; border-radius:8px;}
 
 }
 

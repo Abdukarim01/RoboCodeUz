@@ -255,7 +255,9 @@ body{width:100%;
                   padding:50px 20px 30px 40px;
                   margin-top:20px;
                   display: flex;
-                  border-radius:20px;}
+                  border-radius:20px;
+                  align-items: center;
+                  transition: background-color 0.5s;}
 
 
 .course_texts_block{flex:40%; min-width: 40%;}
@@ -270,26 +272,48 @@ body{width:100%;
 .corse_img1{margin-right:-23%; z-index: 1;}
 .corse_img3{margin-left:-26%; margin-top:9%;}
 
+.corse_img4 a img{width:85%;}
+.corse_img5 a img{width:150%;}
+.corse_img6 a img{width:70%;}
+
+.corse_img4{margin-right:-30.5%; z-index: 1;}
+.corse_img6{margin-top:5%; z-index: 1;}
+
+.corse_img5{margin-left: 0%;}
 
 
 .course_container:nth-child(2n+0){
   background-color:var(--fourth);
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: all 1s;
+
  
 }
 
 .course_container:nth-child(2n+1){
-  background-color:var(--third);
-  transform: translateX(50%);
-  opacity: 0;
-  transition: all 1s;
+  background-color:var(--third);}
+
+.course_container:nth-child(3n+1):hover{
+  background-color:var(--fiveth);
 }
 
+.course_container:nth-child(3n+2):hover{
+  background-color:var(--sixth);
+}
 
+.course_container:nth-child(3n+1):hover .course_texts_block .course_btn a button{background-color:var(--w);
+  color: black;
+  border:1px solid var(--w);} 
 
+.course_container:nth-child(3n+2):hover .course_texts_block .course_btn a button{background-color:var(--w);
+  color: black;
+  border:1px solid var(--w);} 
 
+.course_container:nth-child(3n+3):hover .course_texts_block .course_btn a button{background-color:var(--w);
+  color: black;
+  border:1px solid var(--w);} 
+
+.course_container:nth-child(3n+3):hover{
+  background-color:var(--seventh);
+}
 .course_container:nth-child(2n+1) .course_texts_block .course_title p{font-size:50px;
                 color:var(--w);
                 font-family: 'navbar';}
@@ -566,6 +590,16 @@ body{width:100%;
 
 .company{height:30vw; border-radius:8px;}
 
+.corse_img4 a img{width:105%; }
+.corse_img5 a img{width:170%; margin-left:-35%;}
+.corse_img6 a img{width:85%;}
+
+.corse_img4{margin-right:0; z-index: 1; transform: translateX(30%);}
+.corse_img5{margin-left:0;}
+.corse_img6{margin-top:0; z-index: 1; margin-top:4%;}
+
+
+
 }
 
 @media(max-width: 576px){
@@ -725,7 +759,7 @@ body{width:100%;
 
 .course_container:nth-child(2n+0) .course_texts_block .course_btn a button{font-size: 20px;padding:13px 55px;}
 
-.course_container{padding:50px 25px 15px 40px;}
+.course_container{padding:50px 25px 50px 40px;}
 
 }
 
@@ -787,7 +821,7 @@ body{width:100%;
 
 .course_container:nth-child(2n+0) .course_texts_block .course_btn a button{font-size: 20px;padding:15px 60px;}
 
-.course_container{padding:60px 30px 20px 50px;}
+.course_container{padding:60px 30px 50px 50px;}
 
 
 }

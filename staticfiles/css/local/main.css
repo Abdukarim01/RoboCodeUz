@@ -248,7 +248,7 @@ body{width:100%;
 
 /* start courses */
 
-.section_courses{width:100%; height:auto; margin-top:50px; overflow: hidden;}
+.section_courses{width:100%; height:auto; margin-top:50px;}
 
 .course_container{width:100%;
                   height: auto;
@@ -257,9 +257,10 @@ body{width:100%;
                   display: flex;
                   border-radius:20px;
                   align-items: center;
-                  transition: background-color 0.5s;}
+                  transition: background-color 0.5s;
+                  position: sticky; top: 50px;}
 
-
+                  
 .course_texts_block{flex:40%; min-width: 40%;}
 
 .course_images_block{display: flex; flex: 60%; min-width: 60%;}

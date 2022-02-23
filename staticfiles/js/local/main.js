@@ -47,46 +47,61 @@ var typerslide = new Swiper(".typer_slide", {
 
 /* COURSES ANIMATE */
 
-window.addEventListener('scroll', function() {
-    let course = document.querySelectorAll(".course_container")
-    let res = (window.innerHeight -  course[0].clientHeight) / 2
-    let position = course[0].getBoundingClientRect()
-    if(position.top <= window.innerHeight - (res + course[0].clientHeight + 100)){
-        course[1].style = `position: relative; margin-top:-${course[0].clientHeight - 40}px; transition: all 0.5s; z-index: 10;`
-    }
-    else{
-        course[1].style = `position: relative;  transition:all 0.5s; z-index: 10;`
-    }
+// window.addEventListener('scroll', function() {
+//     let course = document.querySelectorAll(".course_container")
+//     let res = (window.innerHeight -  course[0].clientHeight) / 2
+//     let position = course[0].getBoundingClientRect()
+//     if(position.top <= window.innerHeight - (res + course[0].clientHeight + 100)){
+//         course[1].style = `position: relative; margin-top:-${course[0].clientHeight - 40}px; transition: all 0.5s; z-index: 10;`
+//     }
+//     else{
+//         course[1].style = `position: relative;  transition:all 0.5s; z-index: 10;`
+//     }
 
-    if(course[1].getBoundingClientRect().top <= window.innerHeight - (res + course[1].clientHeight + 100)){
-        course[2].style = `position: relative; margin-top:-${course[1].clientHeight - 40}px; transition: all 0.5s; z-index: 10;`
-    }
-    else{
-        course[2].style = `position: relative;  transition:all 0.5s; z-index: 10;`
-    }
+//     if(course[1].getBoundingClientRect().top <= window.innerHeight - (res + course[1].clientHeight + 100)){
+//         course[2].style = `position: relative; margin-top:-${course[1].clientHeight - 40}px; transition: all 0.5s; z-index: 10;`
+//     }
+//     else{
+//         course[2].style = `position: relative;  transition:all 0.5s; z-index: 10;`
+//     }
 
-    if(course[2].getBoundingClientRect().top <= window.innerHeight - (res + course[2].clientHeight + 100)){
-        course[3].style = `position: relative; margin-top:-${course[2].clientHeight - 40}px; transition: all 0.5s; z-index: 10;`
-    }
-    else{
-        course[3].style = `position: relative;  transition:all 0.5s; z-index: 10;`
-    }
+//     if(course[2].getBoundingClientRect().top <= window.innerHeight - (res + course[2].clientHeight + 100)){
+//         course[3].style = `position: relative; margin-top:-${course[2].clientHeight - 40}px; transition: all 0.5s; z-index: 10;`
+//     }
+//     else{
+//         course[3].style = `position: relative;  transition:all 0.5s; z-index: 10;`
+//     }
 
-    if(course[3].getBoundingClientRect().top <= window.innerHeight - (res + course[3].clientHeight + 100)){
-        course[4].style = `position: relative; margin-top:-${course[3].clientHeight - 40}px; transition: all 0.5s; z-index: 10;`
-    }
-    else{
-        course[4].style = `position: relative;  transition:all 0.5s; z-index: 10;`
-    }
+//     if(course[3].getBoundingClientRect().top <= window.innerHeight - (res + course[3].clientHeight + 100)){
+//         course[4].style = `position: relative; margin-top:-${course[3].clientHeight - 40}px; transition: all 0.5s; z-index: 10;`
+//     }
+//     else{
+//         course[4].style = `position: relative;  transition:all 0.5s; z-index: 10;`
+//     }
 
-    if(course[4].getBoundingClientRect().top <= window.innerHeight - (res + course[4].clientHeight + 100)){
-        course[5].style = `position: relative; margin-top:-${course[4].clientHeight - 40}px; transition: all 0.5s; z-index: 10;`
-    }
-    else{
-        course[5].style = `position: relative;  transition:all 0.5s; z-index: 10;`
-    }
+//     if(course[4].getBoundingClientRect().top <= window.innerHeight - (res + course[4].clientHeight + 100)){
+//         course[5].style = `position: relative; margin-top:-${course[4].clientHeight - 40}px; transition: all 0.5s; z-index: 10;`
+//     }
+//     else{
+//         course[5].style = `position: relative;  transition:all 0.5s; z-index: 10;`
+//     }
     
     
-});
+// });
+
+window.addEventListener('scroll',function(){
+    let course = document.querySelectorAll(".course_container");
+    let test = course[5].getBoundingClientRect().top;
+    if(test <= 50){
+       course.forEach((e)=>{
+        e.style = "position:inherit;"
+       })
+    }
+    else{
+       course.forEach((e)=>{
+        e.style = "position: sticky; top: 50px;"
+       }) 
+    }
+})
 
 /* ENS COURSES ANIMATE*/

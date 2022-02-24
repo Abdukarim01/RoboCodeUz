@@ -52,13 +52,13 @@ window.addEventListener('scroll', function(){
 let boundTop = Math.ceil(course[5].getBoundingClientRect().top);
 if(boundTop <= 180){
     course.forEach((e)=>{
-        e.style = "position:inherit;"
+        e.style = ""
     })
 }
 else{
     let i = 0;
     course.forEach((e)=>{
-        i+=30
+        i+=10
         e.style = `position:sticky; top:${i}px;`
     })
     i = 0;

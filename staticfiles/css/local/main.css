@@ -252,11 +252,32 @@ body{width:100%;
 
 .section_course{position: sticky;}
 
+.section_course:nth-child(3n+0) .container_md .course_change{
+  background-color:var(--sixth) !important;
+  color:black !important;
+}
+
+.section_course:nth-child(3n+1) .container_md .course_change{
+  background-color:var(--seventh) !important;
+  color:white ;
+}
+
+.section_course:nth-child(3n+2) .container_md .course_change{
+  background-color:var(--fiveth) !important;
+  color:white ;
+}
+
+.course_change .course_texts a button{background-color: var(--w) !important;
+                                      color: black !important;
+                                      border:1px solid transparent !important;
+                                      }
+
 .course_container{border-radius:20px;
                   padding: 50px 40px;
                   display: flex;
                   flex-direction: row;
-                  margin-top:20px;}
+                  margin-top:20px;
+                  transition: background-color 0.5s;}
 
 .section_course:nth-child(2n+0) .container_md .course_container{
   background-color: var(--third);
@@ -306,16 +327,16 @@ body{width:100%;
 }
 
 .section_course:nth-child(2n+0) .container_md .course_container .course_texts a button:hover{
-  background-color:transparent;
-  border:1px solid var(--second);
-  color:var(--second);
+  background-color:transparent !important;
+  border:1px solid var(--second) !important;
+  color:var(--second) !important;
   transform: translateY(-5px);
 }
 
 .section_course:nth-child(2n+1) .container_md .course_container .course_texts a button:hover{
-  background-color: transparent;
-  border:1px solid var(--second);
-  color:var(--second);
+  background-color: transparent !important;
+  border:1px solid var(--second) !important;
+  color:var(--second) !important;
   transform: translateY(-5px);
 }
 

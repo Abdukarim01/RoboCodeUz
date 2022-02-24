@@ -50,10 +50,21 @@ var typerslide = new Swiper(".typer_slide", {
 
 let course = document.querySelectorAll(".section_course");
 window.addEventListener('scroll', function(){
+    
 function coursemedia(z) {
   let boundTop = Math.ceil(course[5].getBoundingClientRect().top);
-  if (z.matches) { 
-
+  if (z.matches) {
+            let course_top1 = 50;
+            course.forEach(function(e){
+                course_top1 += 10;
+                let course_position1 = Math.ceil(e.getBoundingClientRect().top);
+                if(course_position1 <= course_top1){
+                    e.querySelector(".course_container").classList = "course_container course_change"
+                } 
+                else{
+                    e.querySelector(".course_container").classList = "course_container "
+                }       
+            }) 
             if(boundTop <= 60){
                 course.forEach((e)=>{
                     e.style = ""
@@ -76,6 +87,19 @@ function coursemedia(z) {
             }
     
   } else {
+
+            let course_top2 = 50;
+            course.forEach(function(e){
+                course_top2 += 30;
+                let course_position2 = Math.ceil(e.getBoundingClientRect().top);
+                if(course_position2 <= course_top2){
+                    e.querySelector(".course_container").classList = "course_container course_change"
+                } 
+                else{
+                    e.querySelector(".course_container").classList = "course_container "
+                }       
+            }) 
+
              if(boundTop <= 180){
                 course.forEach((e)=>{
                     e.style = ""
@@ -85,7 +109,7 @@ function coursemedia(z) {
                 course[1].style = `transform:translateY(${course[4].clientHeight + course[3].clientHeight + course[2].clientHeight + course[1].clientHeight -38}px);`
                 course[2].style = `transform:translateY(${course[4].clientHeight + course[3].clientHeight + course[2].clientHeight-28}px);`
                 course[3].style = `transform:translateY(${course[4].clientHeight + course[3].clientHeight -18}px);`
-                course[4].style = `transform:translateY(${course[4].clientHeight -8}px);`
+                course[4].style = `transform:translateY(${course[4].clientHeight -9}px);`
             }
             else{
                 let i = 0;

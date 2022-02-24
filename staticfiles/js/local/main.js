@@ -47,22 +47,62 @@ var typerslide = new Swiper(".typer_slide", {
 
 /* COURSES ANIMATE */
 
+
 let course = document.querySelectorAll(".section_course");
 window.addEventListener('scroll', function(){
-let boundTop = Math.ceil(course[5].getBoundingClientRect().top);
-if(boundTop <= 180){
-    course.forEach((e)=>{
-        e.style = ""
-    })
+function coursemedia(z) {
+  let boundTop = Math.ceil(course[5].getBoundingClientRect().top);
+  if (z.matches) { 
+
+            if(boundTop <= 60){
+                course.forEach((e)=>{
+                    e.style = ""
+                })
+
+                course[0].style = `transform:translateY(${course[4].clientHeight + course[3].clientHeight + course[2].clientHeight + course[1].clientHeight + course[0].clientHeight + 48}px);`
+                course[1].style = `transform:translateY(${course[4].clientHeight + course[3].clientHeight + course[2].clientHeight + course[1].clientHeight +38}px);`
+                course[2].style = `transform:translateY(${course[4].clientHeight + course[3].clientHeight + course[2].clientHeight +28}px);`
+                course[3].style = `transform:translateY(${course[4].clientHeight + course[3].clientHeight +18}px);`
+                course[4].style = `transform:translateY(${course[4].clientHeight +8}px); `
+                
+            }
+            else{
+                let i = 0;
+                course.forEach((e)=>{
+                    i+=10
+                    e.style = `position:sticky; top:${i}px;`
+                })
+                i = 0;
+            }
+    
+  } else {
+             if(boundTop <= 180){
+                course.forEach((e)=>{
+                    e.style = ""
+                })
+                
+                course[0].style = `transform:translateY(${course[4].clientHeight + course[3].clientHeight + course[2].clientHeight + course[1].clientHeight + course[0].clientHeight -48}px);`
+                course[1].style = `transform:translateY(${course[4].clientHeight + course[3].clientHeight + course[2].clientHeight + course[1].clientHeight -38}px);`
+                course[2].style = `transform:translateY(${course[4].clientHeight + course[3].clientHeight + course[2].clientHeight-28}px);`
+                course[3].style = `transform:translateY(${course[4].clientHeight + course[3].clientHeight -18}px);`
+                course[4].style = `transform:translateY(${course[4].clientHeight -8}px);`
+            }
+            else{
+                let i = 0;
+                course.forEach((e)=>{
+                    i+=30
+                    e.style = `position:sticky; top:${i}px;`
+                })
+                i = 0;
+            }
+  }
 }
-else{
-    let i = 0;
-    course.forEach((e)=>{
-        i+=10
-        e.style = `position:sticky; top:${i}px;`
-    })
-    i = 0;
-}
-})
+
+var z = window.matchMedia("(max-width:992px)")
+coursemedia(z) 
+z.addListener(coursemedia)
+
+ })
+
 
 /* ENS COURSES ANIMATE*/

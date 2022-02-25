@@ -530,6 +530,8 @@ body{width:100%;
   .course_container{padding:30px 20px;}
   .course_mobile_title p{font-size:25px;}
   .our_students{margin:100px 0px 20px 0px;}
+
+  .our_students div p{font-size:22px;}
 }
 
 @media(max-width: 400px){

@@ -130,3 +130,51 @@ z.addListener(coursemedia)
 
 
 /* ENS COURSES ANIMATE*/
+
+/* BENEFIT */
+
+window.addEventListener("scroll", function(){
+    let benefit_img = document.querySelectorAll(".benefit_image2");
+    benefit_img.forEach(function(e){
+
+    if(e.getBoundingClientRect().top <= window.innerHeight - 300){
+        e.classList = "benefit_image2 for_benefit"
+    }else{
+        e.className = "benefit_image2"
+    }
+
+    
+})
+
+
+let benefit_text = document.querySelectorAll(".benefit_text");
+    benefit_text.forEach(function(z){
+
+    if(z.getBoundingClientRect().top <= window.innerHeight - 200){
+        setTimeout(function(){
+            z.classList = "benefit_text for_benefit"
+        },1000)
+    }else{
+        z.className = "benefit_text"
+    }
+
+    
+})
+
+    let benefit_image1 = document.querySelectorAll(".benefit_image1");
+    benefit_image1.forEach(function(p){
+
+    if(p.getBoundingClientRect().top <= window.innerHeight - 300){
+        
+    p.classList = "benefit_image1 for_benefit_img_filter"
+    
+    }else{
+        p.className = "benefit_image1"
+    }
+
+    
+})
+
+})
+
+/* ENDBENEFIT */

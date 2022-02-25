@@ -406,6 +406,8 @@ body{width:100%;
 
 .benefit_image1 a img,.benefit_image2 a img{width:100%;}
 
+.benefit_image2{z-index: 1;}
+
 .benefit_image1{filter: blur(5px);
                 transition: filter 1s;}
 

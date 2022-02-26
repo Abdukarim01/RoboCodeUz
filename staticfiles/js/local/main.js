@@ -151,15 +151,25 @@ let benefit_text = document.querySelectorAll(".benefit_text");
     benefit_text.forEach(function(z){
 
     if(z.getBoundingClientRect().top <= window.innerHeight - 200){
-        setTimeout(function(){
-            z.classList = "benefit_text for_benefit"
-        },1000)
+        
+    z.classList = "benefit_text for_benefit"
+       
     }else{
         z.className = "benefit_text"
     }
 
     
 })
+
+    let ceo = document.querySelector(".ceo");
+
+    if(ceo.getBoundingClientRect().top <= window.innerHeight - 200){
+        
+    ceo.classList = "ceo for_benefit"
+       
+    }else{
+        ceo.className = "ceo"
+    }
 
     let benefit_image1 = document.querySelectorAll(".benefit_image1");
     benefit_image1.forEach(function(p){

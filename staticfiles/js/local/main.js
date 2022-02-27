@@ -163,12 +163,15 @@ let benefit_text = document.querySelectorAll(".benefit_text");
 
     let ceo = document.querySelector(".ceo");
 
-    if(ceo.getBoundingClientRect().top <= window.innerHeight - 200){
+    if(ceo.getBoundingClientRect().top <= window.innerHeight - 250){
         
     ceo.classList = "ceo for_benefit"
+
+    ceo.querySelector('a').querySelector('img').src = "staticfiles/img/main/CEO2.png"
        
     }else{
         ceo.className = "ceo"
+         ceo.querySelector('a').querySelector('img').src = "staticfiles/img/main/CEO.png"
     }
 
     let benefit_image1 = document.querySelectorAll(".benefit_image1");
@@ -182,9 +185,51 @@ let benefit_text = document.querySelectorAll(".benefit_text");
         p.className = "benefit_image1"
     }
 
+    let team = document.querySelector(".team_images");
+
+    if(team.getBoundingClientRect().top <= window.innerHeight - 200){
+        team.classList = "team_images for_benefit"
+    }
+    else{
+        team.classList = "team_images"
+    }
+
+     let team_dot = document.querySelector(".team_dots");
+
+    if(team_dot.getBoundingClientRect().top <= window.innerHeight - 100){
+        team_dot.style = "filter:blur(0px);"
+    }
+    else{
+        team_dot.style = "filter:blur(5px);"
+    }
+
+     let team_text = document.querySelector(".team_text");
+
+    if(team_text.getBoundingClientRect().top <= window.innerHeight - 50){
+        team_text.classList = "team_text for_benefit"
+    }
+    else{
+        team_text.classList = "team_text"
+    }
+
     
 })
 
 })
 
 /* ENDBENEFIT */
+
+/* TEAM SWIPPER */
+
+ var team_swiper = new Swiper(".team_swiper", {
+        slidesPerView:1.5,
+        spaceBetween: 30,
+        grabCursor:true,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+/* END TEAM SWIPPER */

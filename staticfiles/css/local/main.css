@@ -439,8 +439,95 @@ body{width:100%;
 .ceo{flex:100%; width:100%; margin-top:5vw;
     transition: all 1s;}   
 
-.ceo a img{width:80%;}         
+.ceo a img{width:80%;}   
+
 /* END BENEFITS  */
+
+/* JOIN US */
+
+.join_us{margin-top:10vw;}
+
+.team{padding-right:5%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      overflow: hidden;}
+
+.team_image{flex:55%; width:55%;} 
+
+.team_text{flex:45%; width:45%;}
+
+.team_text{padding-left:5%;}
+
+.team_image{display: flex;
+            flex-direction: row;
+            align-items: center;}
+
+.team_dots{flex:35%; overflow: hidden;
+          filter: blur(5px);
+          transition: filter 1s;}
+
+.team_dots img{width:200%; height:150%;}
+
+.team_images{flex:65%;
+            width: 65%;
+            background-image: url(../../img/main/tablet.png);
+            height:55vw;
+            background-size:100% 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: all 1s;}
+
+.team_text h1{color: white; 
+             font-family:sans-serif;
+             text-align: center;
+             font-size:45px;}
+
+.team_text{
+  transform: translateX(50%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.our_team{width:88%;
+          height:78% ;
+          margin-top:-2%;
+          overflow-y:hidden;
+          padding-top:5%;
+          background-color: var(--third);}
+
+.team_swiper{width:100%;
+             height:100%;
+             padding-bottom:40px;}
+
+.team_swiper .swiper-wrapper .swiper-slide{
+                                           display:flex;
+                                           flex-wrap: wrap;
+                                           align-content: space-between;}
+
+.team_swiper_pagination span{background-color: var(--second);}
+
+.swiper_slide_img a img{width:100%;}
+
+.swiper_slide_text{padding-left:5%;
+                   padding-right:5%;
+                   color: var(--w);}
+
+.swiper_slide_text p:nth-child(1){font-family: 'navbar';
+                                  font-size:23px;}
+
+.swiper_slide_text p:nth-child(2){font-family: 'navbar';
+                                  font-size:16px;
+                                  margin-top:10px;
+                                  font-weight: lighter;}
+
+.swiper_slide_logo{text-align: center;}
+
+.swiper_slide_logo img{width:25%;}
+/* END JOIN US  */
 
 /* END MAIN  */
 
@@ -468,6 +555,10 @@ body{width:100%;
   .typer_text{padding-left: 0;}
 
   .benefit_text p{font-size:27px;}
+
+  .swiper_slide_text p:nth-child(1){font-size:20px;}
+
+  .swiper_slide_text p:nth-child(2){font-size:15px;}
   }
 
 @media(max-width: 1200px){
@@ -506,6 +597,11 @@ body{width:100%;
 
   .benefit_text p{font-size:23px;}
 
+  .swiper_slide_text p:nth-child(1){font-size:18px;}
+
+  .swiper_slide_text p:nth-child(2){font-size:13px;}
+
+  .team_text h1{font-size:38px;}
 }
 
 @media(max-width: 992px){
@@ -563,7 +659,16 @@ body{width:100%;
   .benefit_image1{overflow: hidden;}
 
   .benefit_image1 a img{width:150%;}
+
   .benefit{margin-top:60px;}
+
+  .team{flex-direction: column-reverse;}
+
+  .team_image{flex:100%; width:100%; margin-top:30px;} 
+
+  .team_text{flex:100%; width:100%; }
+
+  .team_images{height:90vw;}
 }
 
 @media(max-width: 768px){
@@ -601,6 +706,21 @@ body{width:100%;
   .benefit_items .benefit_image{flex:100%; width:100%;}
   .benefit_items .benefit_text{flex:100%; width:100%; margin-bottom:20px; margin-top:20px;}
   .ceo{text-align: center; margin-top:10vw; padding-right:5%;}
+
+  .team{width:100%; overflow: hidden;}
+
+  .team_dots{flex:70%; min-width:70%; overflow: hidden;
+            margin-top:40%;}
+
+  .team_dots img{width:200%;}
+
+  .team_images{flex:90%;
+               width:90%;
+               margin-left:-60%;
+               height:125vw;}
+
+  .team_text h1{font-size:33px;}
+
 }
 
 @media(max-width: 576px){
@@ -637,6 +757,17 @@ body{width:100%;
 
   .ceo a img{width:100%;} 
 
+  .team_images{height:135vw;}
+
+  .team_dots{margin-top:50%;}
+
+  .team_text h1{font-size:30px;}
+
+  .swiper_slide_text p:nth-child(1){font-size:15px;}
+
+  .swiper_slide_text p:nth-child(2){font-size:10px;}
+
+  .team_image{margin-top: 10px;}
 }
 
 @media(max-width: 400px){
@@ -663,6 +794,8 @@ body{width:100%;
   .our_students{margin:50px 0px 20px 0px;}
   .benefit_items:nth-child(2n+1) .benefit_image2{margin-left:-75%;}
   .benefit_items:nth-child(2n+0) .benefit_image2{margin-right:-75%;}
+
+  .team_text h1{font-size:27px;}
 }
 
 @media(max-width: 350px){
@@ -784,6 +917,12 @@ body{width:100%;
 
   .benefit_text p{font-size:34px;}
 
+  .team_text h1{font-size:50px;}
+
+  .swiper_slide_text p:nth-child(1){font-size:27px;}
+
+  .swiper_slide_text p:nth-child(2){font-size:18px;}
+
 }
 
 @media(min-width:1900px){
@@ -839,6 +978,12 @@ body{width:100%;
   .course_texts a button{font-size:22px; padding:13px 70px 14px 70px;}
   
   .benefit_text p{font-size:37px;}
+
+  .team_text h1{font-size:55px;}
+
+  .swiper_slide_text p:nth-child(1){font-size:30px;}
+
+  .swiper_slide_text p:nth-child(2){font-size:20px;}
 }
 
 /* STYLES FOR SCROLLBAR */

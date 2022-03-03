@@ -1,3 +1,21 @@
+/* MENU CONTROL */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if(Math.ceil(window.scrollY) >= 500){
+    if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".section_navbar").classList = "section_navbar for_navbar2"
+  } else {
+     document.querySelector(".section_navbar").classList = "section_navbar for_navbar"
+  }
+  prevScrollpos = currentScrollPos;
+  }
+  else{
+    document.querySelector(".section_navbar").classList = "section_navbar"
+  }
+}
+/* END MENU CONTROL */
+
 /* START NAVBAR CONTROLR */
 
 let navnum = 0;
@@ -134,6 +152,12 @@ z.addListener(coursemedia)
 /* BENEFIT */
 
 window.addEventListener("scroll", function(){
+    if(Math.ceil(window.scrollY) >= 700){
+        document.querySelector('.scane').classList = 'show_scane scane'
+    }
+    else{
+        document.querySelector('.scane').classList = 'scane'
+    }
     let benefit_img = document.querySelectorAll(".benefit_image2");
     benefit_img.forEach(function(e){
 

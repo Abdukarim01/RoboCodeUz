@@ -2,8 +2,94 @@ body{
 	background-color:#999999;
 }
 
+.section_navbar{
+	width:100%;
+	height:70px;
+	background-color: #999999;
+}
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.navbar_left,.navbar_right{
+	width: auto;
+}
+
+.robocode_logo a img{
+	width:150px;
+	margin-left:-5%;
+	transition-property: transform;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+}
+
+.robocode_logo a img:hover{
+	transform: scale(1.1);
+}
+
+.navbar_right ul li{
+	display: inline-block;
+	color: white;
+	font-family: robocode;
+	font-size:20px;
+	transition-property: color;
+	transition-duration:0.5s;
+	transition-timing-function: ease;
+}
+
+.navbar_right ul li a{
+	padding:8px 12px;
+}
+
+.navbar_right ul li:hover{
+	color:#34ff2f;
+}
+
+.navbar_control{
+	display: none;
+}
+
+.line{
+	width:100%;
+	height:4px;
+	border-radius:10px;
+	background-color: black;
+	transition-property: transform, top;
+	transition-duration:0.5s;
+}
+
+.line:nth-child(2){
+	transform: translateY(225%);
+}
+
+.line:nth-child(3){
+	transform: translateY(450%);
+}
+
+.navbar_control:hover .line:nth-child(1){
+	transform: translateY(320%);
+}
+
+.navbar_control:hover .line:nth-child(3){
+	transform: translateY(120%);
+}
+
 /* sart max-1300 */
-@media(max-width: 1300px){}
+@media(max-width: 1300px){
+	.section_navbar{
+		height:65px;
+	}
+	.navbar_right ul li{
+		font-size:19px;
+	}
+	.navbar_right ul li a{
+		padding:7px 10px;
+	}
+}
 /* end max-1300 */
 
 /* start max-1200 */
@@ -11,7 +97,56 @@ body{
 /* end max-1200 */ 
 
 /* start max-1100 */
-@media(max-width: 1100px){}
+@media(max-width: 1100px){
+	.navbar{
+		flex-direction: column;
+		justify-content: inherit;
+		align-items: inherit;
+	}
+	.section_navbar{
+		height:auto;
+	}
+	.navbar_left,.navbar_right{
+		width: 100%;
+	}
+	.navbar_left{
+		height:65px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.navbar_control,.robocode_logo{
+		display: block;
+		width: auto;
+	}
+	.navbar_control{
+		width:40px;
+		height:30px;
+		position: relative;
+		cursor: pointer;
+	}
+	.navbar_right ul{
+		padding-bottom:15px;
+	}
+	.navbar_right ul li{
+		display: block;
+	}
+	.navbar_right ul li a{
+		display: block;
+		padding:7px 0px;
+		transition-property: background-color, padding-left;
+		transition-duration: 0.5s;
+		border-radius:10px;
+	}
+	.navbar_right ul li a:hover{
+		background-color: rgba(0, 0, 0, 0.2);
+		padding-left:14px;
+	}
+	.navbar_right{
+		height: 0;
+		overflow: hidden;
+	}
+}
 /* end max-1100 */
 
 /* start max-992 */
@@ -55,9 +190,35 @@ body{
 /* end min-1450 */
 
 /* start min-1650 */
-@media(min-width:1650px){}
+@media(min-width:1650px){
+	.section_navbar{
+		height:85px;
+	}
+	.robocode_logo a img{
+		width:175px;
+	}
+	.navbar_right ul li{
+		font-size:22px;
+	}
+	.navbar_right ul li a{
+		padding:10px 14px;
+	}
+}
 /* end min-1650 */
 
 /* start min-1900 */
-@media(min-width:1900px){}
+@media(min-width:1900px){
+	.section_navbar{
+		height:100px;
+	}
+	.robocode_logo a img{
+		width:190px;
+	}
+	.navbar_right ul li{
+		font-size:24px;
+	}
+	.navbar_right ul li a{
+		padding:12px 15px;
+	}
+}
 /* end min-1900 */

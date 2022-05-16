@@ -103,7 +103,7 @@ body{
 		width: 100%;
 	}
 	.navbar_left{
-		height:70px;
+		height:80px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;

@@ -1,0 +1,63 @@
+body{
+	background-color:#999999;
+}
+
+/* sart max-1300 */
+@media(max-width: 1300px){}
+/* end max-1300 */
+
+/* start max-1200 */
+@media(max-width: 1200px){}
+/* end max-1200 */ 
+
+/* start max-1100 */
+@media(max-width: 1100px){}
+/* end max-1100 */
+
+/* start max-992 */
+@media(max-width: 992px){}
+/* end max-992 */
+
+/* start max-768 */
+@media(max-width: 768px){}
+/* end max-768 */
+ 
+/* start max-576 */
+@media(max-width: 576px){}
+/* end max-576 */
+
+/* start max-400 */
+@media(max-width: 400px){} 
+/* end max-400 */
+
+/* start min-400 */
+@media(min-width:400px){}
+/* end min-400 */
+
+/* start min-576 */
+@media(min-width: 576px){}
+/* end min-576 */
+
+/* start min-768 */
+@media(min-width: 768px){}
+/* end min-768 */
+
+ /* start min 992px */
+@media(min-width: 992px){}
+/* end min 992px */
+
+/* start min-1200 */
+@media(min-width: 1200px){}
+/* end min-1200 */
+
+/* start min-1450 */
+@media(min-width:1450px){}
+/* end min-1450 */
+
+/* start min-1650 */
+@media(min-width:1650px){}
+/* end min-1650 */
+
+/* start min-1900 */
+@media(min-width:1900px){}
+/* end min-1900 */

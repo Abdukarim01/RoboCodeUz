@@ -34,6 +34,11 @@ input[type=number]::-webkit-inner-spin-button {
   src: url(../../fonts/robocode.ttf);
 }
 
+@font-face {
+  font-family:'gilroy';
+  src: url(../../fonts/gilroy.ttf);
+}
+
 .container_lg,
 .container_md,
 .container_sm{

@@ -190,6 +190,26 @@ body{
 	display: none;
 }
 
+.course_swiper{
+	width:124%;
+	height:124%;
+	margin-left:-12%;
+	margin-top:-12%;
+}
+
+.course_sliders{
+	width:100%;
+	height:100%;
+}
+
+.course_sliders a img{
+	width:100%;
+}
+
+.typer_for_slide{
+	display: none;
+}
+
 /* sart max-1300 */
 @media(max-width: 1300px){
 	.navbar_right ul li{
@@ -346,6 +366,9 @@ body{
 	.courses_left{
 		width:95vw;
 		height:95vw;
+	}
+	.section_header_courses{
+		width:100%;
 		overflow: hidden;
 	}
 	.course_number a img{

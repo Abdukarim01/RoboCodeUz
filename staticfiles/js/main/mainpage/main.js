@@ -90,4 +90,5 @@ function typerSlide(){
   if(typerSlideNum >= words.length-1) typerSlideNum = -1
 }
 typerSlide()
+
 /* end swipers*/

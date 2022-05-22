@@ -9,6 +9,7 @@ body{
 	transition-property: top;
 	transition-duration: 0.8s;
 	transition-timing-function: ease;
+	z-index:2 !important;
 }
 
 .navbar{
@@ -86,6 +87,7 @@ body{
 
 .courses_right{
 	width: calc( 100% - 44vw);
+	padding-bottom:12%;
 }
 
 .course_number{
@@ -210,6 +212,66 @@ body{
 	display: none;
 }
 
+.course_btn{
+	margin-top:-15%;
+	display: flex;
+	padding-left:6%;
+}
+
+.course_btn div a button{
+	font-family: gilroy;
+	font-size:20px;
+	border: none;
+	background-color: #fff;
+	padding:10px 50px;
+	border-radius:10px;
+	font-weight: bolder;
+	transition-property: background-color,border,color;
+	transition: 0.5s ease;
+	border:1px solid #fff;
+}
+
+.course_btn div a button:hover{
+	border:1px solid #34FF2F;
+	background-color: transparent;
+	color:#34FF2F;
+}
+
+.course_btn div:first-child{
+	width:44vw;
+}
+
+.course_btn div:last-child{
+	width: calc( 100% - 44vw);
+}
+
+/* start main */
+
+.section_lines{
+	margin-top:80px;
+	width: 100%;
+	height:22.5vw;
+	background-image: url(../../../images/mainpage/main/lines.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.section_lines img{
+	width:11.9%;
+}
+
+.section_lines p{
+	font-family: robocode;
+	color: white;
+	font-size:60px;
+	font-weight: bolder;
+}
+
 /* sart max-1300 */
 @media(max-width: 1300px){
 	.navbar_right ul li{
@@ -218,7 +280,7 @@ body{
 	.navbar_right ul li a{
 		padding:7px 10px;
 	}
-	.header_courses_container{
+	.header_courses_container,.course_btn{
 		padding-left:3%;
 	}
 	.course_number a img{
@@ -239,6 +301,13 @@ body{
 	.courses_right{
 		width: calc( 100% - 47vw);
 	}
+	.course_btn div:first-child{
+		width:47vw;
+	}
+
+	.course_btn div:last-child{
+		width: calc( 100% - 47vw);
+	}
 }
 /* end max-1300 */
 
@@ -257,6 +326,25 @@ body{
 	}
 	.courses_right{
 		width: calc( 100% - 50vw);
+	}
+	.course_btn div:first-child{
+		width:50vw;
+	}
+
+	.course_btn div:last-child{
+		width: calc( 100% - 50vw);
+	}
+	.course_btn{
+		margin-top:-18%;
+	}
+	.course_btn div a button{
+		font-size:18px;
+	}
+	.section_lines p{
+		font-size:50px;
+	}
+	.section_lines img{
+		width:170px;
 	}
 }
 /* end max-1200 */ 
@@ -340,6 +428,27 @@ body{
 		font-size:40px;
 		line-height:45px;
 	}
+	.courses_right{
+		padding-bottom:0%;
+	}
+	.course_btn{
+		margin-top:5%;
+		padding-left: 0;
+	}
+	.course_btn div:first-child{
+		display: none;
+	}
+
+	.course_btn div:last-child{
+		width:100%;
+		text-align: center;
+	}
+	.course_btn div a button{
+		font-size:20px;
+		width:500px;
+		max-width:500px;
+	}
+	
 }
 /* end max-1100 */
 
@@ -358,6 +467,20 @@ body{
 		width:80vw;
 		height:80vw;
 	}
+	.course_btn{
+		margin-top:10%;
+	}
+	.section_lines p{
+		margin-top:5px;
+		font-size:30px;
+	}
+	.section_lines img{
+		width:130px;
+	}
+	.section_lines{
+		height:250px;
+	}
+
 }
 /* end max-768 */
 
@@ -404,7 +527,18 @@ body{
 	.courses_left{
 		margin-top:10%;
 	}
-
+	.course_btn{
+		margin-top:15%;
+	}
+	.course_btn div a button{
+		font-size:20px;
+		width:100%;
+		padding:8px 0px;
+	}
+	.section_lines{
+		height:200px;
+		margin-top:50px;
+	}
 }
 /* end max-576 */
 
@@ -416,6 +550,12 @@ body{
 	.typer_under_text{
 		font-size:25px;
 		line-height:30px;
+	}
+	.course_btn{
+		margin-top:25%;
+	}
+	.course_btn div a button{
+		font-size:18px;
 	}
 } 
 /* end max-400 */
@@ -431,6 +571,9 @@ body{
 	.typer_under_text{
 		font-size:20px;
 		line-height:25px;
+	}
+	.course_btn div a button{
+		font-size:16px;
 	}
 } 
 /* end max-320 */
@@ -480,6 +623,16 @@ body{
 		font-size:55px;
 		line-height:70px;
 	}
+	.course_btn{
+		margin-top:-17%;
+	}
+	.course_btn div a button{
+		font-size:22px;
+		padding:15px 50px;
+	}
+	.section_lines p{
+		font-size:70px;
+	}
 }
 /* end min-1650 */
 
@@ -503,6 +656,20 @@ body{
 	.typer_under_text{
 		font-size:65px;
 		line-height:80px;
+	}
+	.courses_right{
+		padding-bottom:11%;
+	}
+	.course_btn{
+		margin-top:-16%;
+	}
+	.course_btn div a button{
+		font-size:24px;
+		padding:15px 60px;
+		border-radius:15px;
+	}
+	.section_lines p{
+		font-size:80px;
 	}
 }
 /* end min-1900 */

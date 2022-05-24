@@ -102,32 +102,32 @@ let course_blocks = q(".course_blocks");
                     top:${10 * (index+1)}px;
               `
            })
-           window.addEventListener("scroll", function(){
-              let courseLast = course_blocks[course_blocks.length-1];
-              let position = Math.ceil(courseLast.getBoundingClientRect().top);
-              // if(position < 20 * course_blocks.length){
-              //     ///
-              // }
-              course_blocks.forEach(function(e){
-                let courseTop = Math.ceil(e.getBoundingClientRect().top);
-                if(courseTop <= (window.innerHeight - e.getBoundingClientRect().height + 50) / 2){
-                    e.classList.add('for_course_blocks')
-                }
-                else{
-                  e.className = 'course_blocks'
-                }
-              })
-           })
         } else {
-            course_blocks.forEach((e,index)=>{
-              e.style = `
-                    position: sticky;
-                    top:${30 * (index+1)}px;
-              `
-            })
+          course_blocks.forEach((e,index)=>{
+            e.style = `
+                  position: sticky;
+                  top:${25 * (index+1)}px;
+            `
+          })
     }
 }
-var y = window.matchMedia("(max-width:768px)")
+var y = window.matchMedia("(max-width:1100px)")
 media2(y) 
 y.addListener(media2)
+window.addEventListener("scroll", function(){
+  let courseLast = course_blocks[course_blocks.length-1];
+  let position = Math.ceil(courseLast.getBoundingClientRect().top);
+  // if(position < 20 * course_blocks.length){
+  //     ///
+  // }
+  course_blocks.forEach(function(e){
+    let courseTop = Math.ceil(e.getBoundingClientRect().top);
+    if(courseTop <= (window.innerHeight - e.getBoundingClientRect().height + 50) / 2){
+      e.classList.add('for_course_blocks')
+    }
+    else{
+      e.className = 'course_blocks';
+    }
+  })
+})
 /* end main course animations */

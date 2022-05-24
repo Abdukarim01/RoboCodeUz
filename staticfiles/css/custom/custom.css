@@ -83,6 +83,21 @@ input[type=number]::-webkit-inner-spin-button {
 
 .for_navbar_section2{position: fixed; top:0; box-shadow:0px -10px 40px 0px rgba(0, 0, 0, 0.7);}
 
+.for_course_blocks:nth-child(3n+1){
+  background-color: #25B3E5 !important;
+  color: #fff !important;
+}
+
+.for_course_blocks:nth-child(3n+2){
+  background-color: #F8D25A !important;
+  color: #000 !important;
+}
+
+.for_course_blocks:nth-child(3n+3){
+  background-color: #F8453F !important;
+  color: #fff !important;
+}
+
 /* start min-400 */
 @media(min-width:400px){
   .container_lgf{width:99%;}

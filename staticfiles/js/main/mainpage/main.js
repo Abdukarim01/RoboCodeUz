@@ -81,7 +81,6 @@ function typerSlide(){
   let wait = (q(".typer").getAttribute("data-delay") * 2) * (content.length + 1) + Number(q(".typer").getAttribute("data-deleteDelay"))
   setTimeout(function(){
     if(typerSlideNum < words.length-1){
-        console.log(content,wait)
         course_swiper.slideTo(typerSlideNum+2)
         typerSlide()
     }
@@ -91,15 +90,14 @@ function typerSlide(){
 }
 typerSlide()
 /* end swipers*/
-
 /* start main course animations */
 let course_blocks = q(".course_blocks");
- function media2(y) {
-    if (y.matches) { 
+function media2(y) {
+    if (y.matches){ 
            course_blocks.forEach((e,index)=>{
               e.style = `
                     position: sticky;
-                    top:${10 * (index+1)}px;
+                    top:${15 * (index+1)}px;
               `
            })
         } else {
@@ -114,16 +112,12 @@ let course_blocks = q(".course_blocks");
 var y = window.matchMedia("(max-width:1100px)")
 media2(y) 
 y.addListener(media2)
+//
 window.addEventListener("scroll", function(){
-  let courseLast = course_blocks[course_blocks.length-1];
-  let position = Math.ceil(courseLast.getBoundingClientRect().top);
-  // if(position < 20 * course_blocks.length){
-  //     ///
-  // }
-  course_blocks.forEach(function(e){
+  course_blocks.forEach(function(e,index){
     let courseTop = Math.ceil(e.getBoundingClientRect().top);
     if(courseTop <= (window.innerHeight - e.getBoundingClientRect().height + 50) / 2){
-      e.classList.add('for_course_blocks')
+      e.classList.add('for_course_blocks');
     }
     else{
       e.className = 'course_blocks';

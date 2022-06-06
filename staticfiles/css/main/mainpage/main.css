@@ -275,12 +275,13 @@ body{
 
 .course_blocks{
 	width:100%;
-	height:auto;
+	height:400px;
 	padding:5% 3% 3% 3%;
 	border-radius:20px;
 	margin-bottom:25px;
 	transition-property: background-color,color;
 	transition: 0.8s ease;
+
 }
 
 .course_blocks:last-child{
@@ -367,6 +368,46 @@ body{
 	display: none;
 }
 
+.img_onshow{
+	display: none;
+}
+
+.groups{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.group{
+	width:25%;
+	padding:0px 15px;
+}
+
+.group a {
+	display: block;
+	width:100%;
+	height: 100%;
+	background-color: #fff;
+	border-radius:15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 10px;
+}
+
+.group a img{
+	width:100%;
+	transition-property: transform;
+	transition-duration:0.5s;
+}
+
+.group:nth-child(1) a img, .group:nth-child(2) a img{
+	width:70%;
+}
+
+.group a:hover img{
+	transform: scale(1.05);
+}
+
 /* sart max-1300 */
 @media(max-width: 1300px){
 	.navbar_right ul li{
@@ -412,6 +453,9 @@ body{
 	.course_texts a button{
 		padding:13px 45px;
 	}
+	.course_blocks{
+		height:370px;
+	}
 }
 /* end max-1300 */
 
@@ -449,6 +493,21 @@ body{
 	}
 	.section_lines img{
 		width:170px;
+	}
+	.course_blocks{
+		padding-top: 0;
+		padding-bottom: 0;
+		
+	}
+	.course_items{
+		height: 100%;
+		align-items: center;
+	}
+	.course_texts div:nth-child(2){
+		margin-top:20px;
+	}
+	.group{
+		padding:0px 10px;
 	}
 }
 /* end max-1200 */ 
@@ -593,6 +652,14 @@ body{
 	.course_mobile{
 		display: block;
 	}
+	.course_blocks{
+		padding-top:4%;
+		padding-bottom:5%;
+		height: auto;
+	}
+	.course_texts div:nth-child(2){
+		margin-top:0px;
+	}
 }
 /* end max-992 */
 
@@ -627,6 +694,11 @@ body{
 	}
 	.course_items{
 		padding:5% 0%;
+	}
+	.group{
+		width:50%;
+		padding:10px;
+		height:35vw;
 	}
 }
 /* end max-768 */
@@ -707,6 +779,12 @@ body{
 	}
 	.course_texts a button{
 		width:150px;
+	}
+	.group{
+		padding: 5px;
+	}
+	.group a{
+		border-radius:10px;
 	}
 }
 /* end max-576 */
@@ -815,6 +893,9 @@ body{
 		padding:15px 65px;
 		font-size:18px;
 	}
+	.course_blocks{
+		height:470px;
+	}
 }
 /* end min-1650 */
 
@@ -862,6 +943,12 @@ body{
 	.course_texts a button{
 		padding:15px 70px;
 		font-size:20px;
+	}
+	.course_blocks{
+		height:500px;
+	}
+	.group{
+		padding:0px 20px;
 	}
 }
 /* end min-1900 */

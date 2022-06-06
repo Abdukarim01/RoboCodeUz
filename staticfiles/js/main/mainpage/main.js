@@ -118,13 +118,11 @@ window.addEventListener("scroll", function(){
     let courseTop = Math.ceil(e.getBoundingClientRect().top);
     if(courseTop <= (window.innerHeight - e.getBoundingClientRect().height + 50) / 2){
       e.classList.add('for_course_blocks');
-      e.querySelectorAll("img")[0].style = "display:none;"
-      e.querySelectorAll("img")[1].style = "display:inherit;"
+      e.querySelector("img").style = "filter:grayscale(0%);"
     }
     else{
       e.className = 'course_blocks';
-      e.querySelectorAll("img")[1].style = "display:none;"
-      e.querySelectorAll("img")[0].style = "display:inherit;"
+       e.querySelector("img").style = "filter:grayscale(100%);"
     }
   })
 })

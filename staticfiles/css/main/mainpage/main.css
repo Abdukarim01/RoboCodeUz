@@ -312,7 +312,10 @@ body{
 }
 
 .course_img a img{
+	transition-property: filter;
+	transition: 1s ease;
 	width:100%;
+	filter: grayscale(100%);
 }
 
 .course_texts{
@@ -368,9 +371,7 @@ body{
 	display: none;
 }
 
-.img_onshow{
-	display: none;
-}
+
 
 .groups{
 	display: flex;
@@ -406,6 +407,70 @@ body{
 
 .group a:hover img{
 	transform: scale(1.05);
+}
+
+.section_difference{
+	margin-top: 5%;
+}
+
+.differences{
+	display: flex;
+}
+
+.difference_text{
+	width:50%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding:0% 5%;
+}
+
+.difference_img{
+	width:50%;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+.dots{
+	width:55%;
+}
+
+.phone{
+	width:45%;
+	z-index: 1;
+}
+
+.phone img{
+	width: 102%;
+}
+
+.dots img{
+	width:120%;
+	transform: translateY(-3%) translateX(-4%);
+}
+
+.difference_text div{
+	width:35px;
+	height:35px;
+	background-color: #34FF2F;
+	border-radius: 50%;
+}
+
+.difference_text p{
+	margin-top:20px;
+	font-size:30px;
+	font-family: robocode;
+	color: #fff;
+}
+
+
+.difference_text p span{
+	color: #000;
+	font-size:40px;
+	display: inline-block;
+	transform: translateY(5px);
 }
 
 /* sart max-1300 */
@@ -455,6 +520,16 @@ body{
 	}
 	.course_blocks{
 		height:370px;
+	}
+	.difference_text p{
+		font-size:25px;
+	}
+	.difference_text p span{
+		font-size:30px;
+	}
+	.difference_text div{
+		width:30px;
+		height: 30px;
 	}
 }
 /* end max-1300 */
@@ -614,6 +689,13 @@ body{
 	.course_blocks{
 		margin-bottom: 15px;
 	}
+	.difference_text p{
+		font-size:20px;
+	}
+	.difference_text p span{
+		font-size:25px;
+	}
+	
 }
 /* end max-1100 */
 
@@ -660,6 +742,25 @@ body{
 	.course_texts div:nth-child(2){
 		margin-top:0px;
 	}
+	.differences:nth-child(2n+1){
+		flex-direction: column-reverse;
+	}
+	.differences:nth-child(2n+0){
+		flex-direction: column;
+	}
+	.differences:nth-child(2n+1) .difference_img{
+		padding-right:3%;
+	}
+	.differences:nth-child(2n+0) .difference_img{
+		padding-left:3%;
+	}
+	.difference_img,.difference_text{
+		width:100%;
+	}
+	.difference_img{
+		margin:5% 0%;
+	}
+	
 }
 /* end max-992 */
 
@@ -786,6 +887,29 @@ body{
 	.group a{
 		border-radius:10px;
 	}
+	.difference_text p{
+		font-size:18px;
+		margin-top:10px;
+	}
+	.difference_text p span{
+		font-size:23px;
+	}
+	.difference_text div{
+		width:30px;
+		height: 30px;
+	}
+	.difference_text{
+		padding: 0% 3%;
+	}
+	.differences:nth-child(2n+1) .difference_img{
+		padding-right:10%;
+	}
+	.differences:nth-child(2n+0) .difference_img{
+		padding-left:10%;
+	}
+	.dots img, .phone img{
+		width: 100%;
+	}
 }
 /* end max-576 */
 
@@ -896,6 +1020,16 @@ body{
 	.course_blocks{
 		height:470px;
 	}
+	.difference_text p{
+		font-size:35px;
+	}
+	.difference_text p span{
+		font-size:45px;
+	}
+	.difference_text div{
+		width:40px;
+		height: 40px;
+	}
 }
 /* end min-1650 */
 
@@ -949,6 +1083,16 @@ body{
 	}
 	.group{
 		padding:0px 20px;
+	}
+	.difference_text p{
+		font-size:40px;
+	}
+	.difference_text p span{
+		font-size:50px;
+	}
+	.difference_text div{
+		width:45px;
+		height: 45px;
 	}
 }
 /* end min-1900 */

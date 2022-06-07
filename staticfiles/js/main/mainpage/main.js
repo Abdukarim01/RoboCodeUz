@@ -151,5 +151,37 @@ window.addEventListener("scroll", function(){
       e.className = "difference_text"
     }
   })
+  let seo_img = q(".ceo_img");
+  let seo_img_height = seo_img.getBoundingClientRect().height;
+  let seo_img_top = Math.ceil(seo_img.getBoundingClientRect().top)
+  if(seo_img_top <= window.innerHeight - ( seo_img_height / 2)){
+      seo_img.classList.add("for_seo")
+      seo_img.classList.add("for_seo")
+      seo_img.querySelector("img").style = "filter: grayscale(0%);"
+    }
+    else{
+      seo_img.className = "ceo_img"
+      seo_img.className = "ceo_img"
+      seo_img.querySelector("img").style = "filter: grayscale(100%);"
+    }
+    if(seo_img_top <= window.innerHeight - seo_img_height){
+      seo_img.querySelector("img").style = "filter: grayscale(0%);"
+    }
+    else{
+      seo_img.querySelector("img").style = "filter: grayscale(100%);"
+    }
+
+  let ceo_text = q(".ceo_text");
+  let ceo_text_height = ceo_text.getBoundingClientRect().height;
+  let ceo_text_top = Math.ceil(ceo_text.getBoundingClientRect().top)
+  if(ceo_text_top <= window.innerHeight - ( ceo_text_height / 1.5)){
+      ceo_text.classList.add("for_seo")
+      ceo_text.classList.add("for_seo")
+    }
+    else{
+      ceo_text.className = "ceo_text"
+      ceo_text.className = "ceo_text"
+    }
+
 })
 /* end main course animations */

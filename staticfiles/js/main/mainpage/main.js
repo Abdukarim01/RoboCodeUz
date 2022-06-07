@@ -125,5 +125,31 @@ window.addEventListener("scroll", function(){
        e.querySelector("img").style = "filter:grayscale(100%);"
     }
   })
+  let defferences_img = q(".difference_img");
+  defferences_img.forEach(function(e){
+    let e_height = e.getBoundingClientRect().height;
+    let e_top = Math.ceil(e.getBoundingClientRect().top)
+    if(e_top <= window.innerHeight - ( e_height / 2)){
+      e.querySelector(".dots").classList.add("for_defference_img_dots")
+      e.querySelector(".phone").classList.add("for_defference_img_phone")
+    }
+    else{
+      e.querySelector(".dots").className = "dots"
+      e.querySelector(".phone").className = "phone"
+    }
+  })
+  let defferences_text = q(".difference_text")
+  defferences_text.forEach(function(e){
+    let e_height = e.getBoundingClientRect().height;
+    let e_top = Math.ceil(e.getBoundingClientRect().top)
+    if(e_top <= window.innerHeight - ( e_height / 1.5)){
+      e.classList.add("for_difference_text")
+      e.classList.add("for_difference_text")
+    }
+    else{
+      e.className = "difference_text"
+      e.className = "difference_text"
+    }
+  })
 })
 /* end main course animations */

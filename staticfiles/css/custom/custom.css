@@ -102,6 +102,20 @@ input[type=number]::-webkit-inner-spin-button {
   text-align: center;
 }
 
+.for_defference_img_phone{
+  transform: translateX(0%) !important;
+  opacity: 1 !important;
+}
+
+.for_defference_img_dots{
+  filter: blur(0px) !important;
+}
+
+.for_difference_text{
+  transform: translateX(0%) !important;
+  opacity: 1 !important;
+}
+
 /* start min-400 */
 @media(min-width:400px){
   .container_lgf{width:99%;}

@@ -1307,13 +1307,13 @@ body{
 		font-size: 30px;
 	}
 	.rbx_member_logo a img{
-		width:50px;
+		width:55px;
 	}
 	.rbx_about_member p:nth-child(1){
-		font-size:22px;
+		font-size:23px;
 	}
 	.rbx_about_member p:nth-child(2){
-		font-size:16px;
+		font-size:17px;
 	}
 }
 /* end max-576 */
@@ -1325,13 +1325,13 @@ body{
 		margin-left:-60%;
 	}
 	.rbx_member_logo a img{
-		width:40px;
+		width:45px;
 	}
 	.rbx_about_member p:nth-child(1){
-		font-size:18px;
+		font-size:19px;
 	}
 	.rbx_about_member p:nth-child(2){
-		font-size:14px;
+		font-size:15px;
 	}
 }
 /* end max-500 */
@@ -1396,13 +1396,13 @@ body{
 		font-size:16px;
 	}
 	.rbx_member_logo a img{
-		width:30px;
+		width:35px;
 	}
 	.rbx_about_member p:nth-child(1){
-		font-size:16px;
+		font-size:17px;
 	}
 	.rbx_about_member p:nth-child(2){
-		font-size:12px;
+		font-size:13px;
 	}
 } 
 /* end max-320 */

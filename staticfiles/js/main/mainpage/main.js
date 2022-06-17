@@ -183,5 +183,37 @@ window.addEventListener("scroll", function(){
       ceo_text.className = "ceo_text"
     }
 
+  let rb_group = q(".rb_group_dots");
+  let rb_group_height = rb_group.getBoundingClientRect().height;
+  let rb_group_top = Math.ceil(rb_group.getBoundingClientRect().top)
+  if(rb_group_top <= window.innerHeight - ( rb_group_height / 1.5)){
+      rb_group.classList.add("for_defference_img_dots")
+      rb_group.classList.add("for_defference_img_dots")
+    }
+    else{
+      rb_group.className = "rb_group_dots"
+      rb_group.className = "rb_group_dots"
+    }
+  let rb_group_tablet = q(".rb_group_tablet");
+  let rb_group_tablet_height = rb_group_tablet.getBoundingClientRect().height;
+  let rb_group_tablet_top = Math.ceil(rb_group_tablet.getBoundingClientRect().top)
+  if(rb_group_tablet_top <= window.innerHeight - ( rb_group_tablet_height / 1.5)){
+      rb_group_tablet.classList.add("for_defference_img_phone")
+      rb_group_tablet.classList.add("for_defference_img_phone")
+    }
+    else{
+      rb_group_tablet.className = "rb_group_tablet"
+      rb_group_tablet.className = "rb_group_tablet"
+    }
+})
+
+let members_swiper = new Swiper(".members_swiper",{
+  slidesPerView:'auto',
+  centeredSlides: true,
+  // spaceBetween: 20,
+  pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+  },
 })
 /* end main course animations */

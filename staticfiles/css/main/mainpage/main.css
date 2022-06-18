@@ -1445,13 +1445,6 @@ body{
 	.all_vidoes_btn a button{
 		font-size:12px;
 	}
-	.ask_title{
-		font-size:20px;
-	}
-	
-	.ask_title{
-		padding:3% 3% 3% 4%;
-	}
 }
 /* end max-768 */
 
@@ -1672,12 +1665,6 @@ body{
 	.all_vidoes_btn a button{
 		font-size:15px;
 	}
-	.ask_title{
-		font-size:18px;
-	}
-	.ask_title{
-		padding:3% 0% 3% 3%;
-	}
 }
 /* end max-576 */
 
@@ -1712,9 +1699,6 @@ body{
 	}
 	.ifr_last_video_blocktop a{
 		font-size:12px;
-	}
-	.ask_title{
-		font-size:16px;
 	}
 }
 /* end max-500 */
@@ -1776,9 +1760,6 @@ body{
 	}
 	.ifr_last_video_blocktop a{
 		font-size:11px;
-	}
-	.ask_title{
-		font-size:14px;
 	}
 } 
 /* end max-400 */

@@ -1588,6 +1588,10 @@ body{
 	.rbx_about_member p:nth-child(2){
 		font-size:18px;
 	}
+
+	.last_videos_block{
+		width:87%;
+	}
 	.ifr_last_video_blocktop h3{
 		font-size:22px;
 	}
@@ -1703,6 +1707,23 @@ body{
 	}
 	.rb_group_text{
 		font-size: 25px;
+	}
+	.all_ifr_text p{
+		font-size:13px;
+	}
+
+	.all_ifr_text a{
+		font-size:10px;
+	}
+	.ifr_last_video_blocktop h3{
+		font-size:18px;
+	}
+
+	.ifr_last_video_blocktop p{
+		font-size:14px;
+	}
+	.ifr_last_video_blocktop a{
+		font-size:11px;
 	}
 } 
 /* end max-400 */

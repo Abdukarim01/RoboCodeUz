@@ -901,6 +901,53 @@ body{
   transition: max-height 0.2s ease-out;
 }
 
+.sign_up_container{
+	display: flex;
+	align-items: center;
+}
+
+.sign_up_img a img{
+	width:100%;
+}
+
+.form_field label{
+	display: block;
+	font-family: gilroy;
+	font-size: 20px;
+	color: #fff;
+}
+
+.sign_up_form,.sign_up_img{
+	width:50%;
+}
+
+.sign_up_form{
+	padding-left:3%;
+}
+
+.form_field {
+	margin-top:2%;
+}
+
+.form_field input,.form_field textarea{
+	width:100%;
+	max-width:100%;
+	border-radius:10px;
+	border: none;
+	font-size:23px;
+	padding:1.5% 5% 1.5% 2%;
+	font-family: robocode;
+	outline: none;
+}
+
+.form_field input[type="submit"]{
+	padding:0%;
+	background-color: #3D3D3D;
+	color: #fff;
+	padding:1% 0%;
+	font-size:20px;
+}
+
 /* sart max-1300 */
 @media(max-width: 1300px){
 	.navbar_right ul li{
@@ -1388,6 +1435,15 @@ body{
 	.all_vidoes_btn a button{
 		font-size:15px;
 	}
+	.sign_up_container{
+		flex-direction: column;
+	}
+	.sign_up_form,.sign_up_img{
+		width:100%;
+	}
+	.sign_up_form{
+		padding-left:0%;
+	}
 }
 /* end max-992 */
 
@@ -1709,6 +1765,21 @@ body{
 	.ask_sub_field p{
 		font-size:20px;
 	}
+	.form_field label{
+		font-size: 18px;
+	}
+	.form_field {
+		margin-top:4%;
+	}
+
+	.form_field input,.form_field textarea{
+		font-size:20px;
+		padding:2% 8% 2% 4%;
+	}
+	.form_field input[type="submit"]{
+		font-size:18px;
+		padding:1.5% 0%;
+	}
 }
 /* end max-576 */
 
@@ -1967,6 +2038,15 @@ body{
 	.ask_sub_field p{
 		font-size:29px;
 	}
+	.form_field input,.form_field textarea{
+		font-size:27px;
+	}
+	.form_field input[type="submit"]{
+		font-size: 23px;
+	}
+	.form_field label{
+		font-size:22px;
+	}
 }
 /* end min-1650 */
 
@@ -2079,5 +2159,15 @@ body{
 	.ask_sub_field p{
 		font-size:32px;
 	}
+	.form_field input,.form_field textarea{
+		font-size:30px;
+	}
+	.form_field input[type="submit"]{
+		font-size: 25px;
+	}
+	.form_field label{
+		font-size:24px;
+	}
+
 }
 /* end min-1900 */

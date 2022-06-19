@@ -1213,7 +1213,7 @@ body{
 		flex-direction: column;
 	}
 	.ask_title{
-		padding:1.5% 0% 1.5% 1.5%;
+		padding:1.5% 1.5% 1.5% 1.5%;
 	}
 	.ask_title_number_left{
 		padding-right:1.5%;
@@ -1454,7 +1454,7 @@ body{
 		font-size:12px;
 	}
 	.ask_title{
-		padding:2.5% 0% 2.5% 2.5%;
+		padding:2.5% 2.5% 2.5% 2.5%;
 	}
 	.ask_title_number_left{
 		padding-right:2.5%;

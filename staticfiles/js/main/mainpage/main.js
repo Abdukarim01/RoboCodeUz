@@ -144,11 +144,11 @@ window.addEventListener("scroll", function(){
     let e_top = Math.ceil(e.getBoundingClientRect().top)
     if(e_top <= window.innerHeight - ( e_height / 1.5)){
       e.classList.add("for_difference_text")
-      e.classList.add("for_difference_text")
+
     }
     else{
       e.className = "difference_text"
-      e.className = "difference_text"
+  
     }
   })
   let seo_img = q(".ceo_img");
@@ -156,11 +156,9 @@ window.addEventListener("scroll", function(){
   let seo_img_top = Math.ceil(seo_img.getBoundingClientRect().top)
   if(seo_img_top <= window.innerHeight - ( seo_img_height / 2)){
       seo_img.classList.add("for_seo")
-      seo_img.classList.add("for_seo")
       seo_img.querySelector("img").style = "filter: grayscale(0%);"
     }
     else{
-      seo_img.className = "ceo_img"
       seo_img.className = "ceo_img"
       seo_img.querySelector("img").style = "filter: grayscale(100%);"
     }
@@ -176,11 +174,11 @@ window.addEventListener("scroll", function(){
   let ceo_text_top = Math.ceil(ceo_text.getBoundingClientRect().top)
   if(ceo_text_top <= window.innerHeight - ( ceo_text_height / 1.5)){
       ceo_text.classList.add("for_seo")
-      ceo_text.classList.add("for_seo")
+
     }
     else{
       ceo_text.className = "ceo_text"
-      ceo_text.className = "ceo_text"
+  
     }
 
   let rb_group = q(".rb_group_dots");
@@ -188,10 +186,9 @@ window.addEventListener("scroll", function(){
   let rb_group_top = Math.ceil(rb_group.getBoundingClientRect().top)
   if(rb_group_top <= window.innerHeight - ( rb_group_height / 1.5)){
       rb_group.classList.add("for_defference_img_dots")
-      rb_group.classList.add("for_defference_img_dots")
+
     }
     else{
-      rb_group.className = "rb_group_dots"
       rb_group.className = "rb_group_dots"
     }
   let rb_group_tablet = q(".rb_group_tablet");
@@ -199,11 +196,18 @@ window.addEventListener("scroll", function(){
   let rb_group_tablet_top = Math.ceil(rb_group_tablet.getBoundingClientRect().top)
   if(rb_group_tablet_top <= window.innerHeight - ( rb_group_tablet_height / 1.5)){
       rb_group_tablet.classList.add("for_defference_img_phone")
-      rb_group_tablet.classList.add("for_defference_img_phone")
     }
     else{
       rb_group_tablet.className = "rb_group_tablet"
-      rb_group_tablet.className = "rb_group_tablet"
+    }
+  let arm = q(".sign_up_img").querySelector("img");
+  let arm_height = arm.getBoundingClientRect().height;
+  let arm_top = Math.ceil(arm.getBoundingClientRect().top)
+  if(arm_top <= window.innerHeight - ( arm_height / 2)){
+      arm.classList.add("arm_action")
+    }
+    else{
+      arm.className = ""
     }
 })
 

@@ -150,6 +150,10 @@ body::-webkit-scrollbar-thumb:hover {
   border-left: 3px solid #fff !important;
 }
 
+.arm_action{
+  transform: rotate(0deg) !important;
+}
+
 /* start min-400 */
 @media(min-width:400px){
   .container_lgf{width:99%;}

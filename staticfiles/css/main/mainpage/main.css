@@ -865,6 +865,9 @@ body{
 	font-family: robocode;
 	font-size:28px;
 	cursor: pointer;
+	color: #000;
+	transition-property: color;
+	transition: 0.5s ease;
 }
 
 .ask_title_number_left,.ask_title_text,.ask_title_number_right{
@@ -881,6 +884,21 @@ body{
 
 .asks_filed_items li{
 	border-left:3px solid black;
+	transition-property: border;
+	transition: 0.5s ease;
+}
+
+.ask_sub_field p{
+	font-family:gilroy;
+	padding:1% 6%;
+	font-size:27px;
+	color: #fff;
+}
+
+.ask_sub_field{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 /* sart max-1300 */
@@ -1218,6 +1236,9 @@ body{
 	.ask_title_number_left{
 		padding-right:1.5%;
 	}
+	.ask_sub_field p{
+		padding:1.5% 1.5% 1.5% 3.5%;
+	}
 }
 /* end max-1100 */
 
@@ -1459,6 +1480,9 @@ body{
 	.ask_title_number_left{
 		padding-right:2.5%;
 	}
+	.ask_sub_field p{
+		padding:2.5% 2.5% 2.5% 6%;
+	}
 }
 /* end max-768 */
 
@@ -1682,6 +1706,9 @@ body{
 	.ask_title{
 		font-size:21px;
 	}
+	.ask_sub_field p{
+		font-size:20px;
+	}
 }
 /* end max-576 */
 
@@ -1719,6 +1746,9 @@ body{
 	}
 	.ask_title{
 		font-size:19px;
+	}
+	.ask_sub_field p{
+		font-size:18px;
 	}
 }
 /* end max-500 */
@@ -1934,6 +1964,9 @@ body{
 	.ask_title{
 		font-size:30px;
 	}
+	.ask_sub_field p{
+		font-size:29px;
+	}
 }
 /* end min-1650 */
 
@@ -2042,6 +2075,9 @@ body{
 	}
 	.ask_title{
 		font-size:33px;
+	}
+	.ask_sub_field p{
+		font-size:32px;
 	}
 }
 /* end min-1900 */

@@ -217,3 +217,26 @@ let members_swiper = new Swiper(".members_swiper",{
   },
 })
 /* end main course animations */
+function asks(e){
+   let panel = e.nextElementSibling;
+   if (panel.style.maxHeight) {
+    panel.style.maxHeight = null;
+    e.className = "ask_title"
+    e.querySelectorAll("span")[2].innerHTML = "+"
+    e.parentElement.className = ""
+  } else {
+    q(".ask_sub_field").forEach((e)=>{
+      e.style.maxHeight = null;
+    })
+    q(".ask_title").forEach((e)=>{
+      e.className = "ask_title"
+      e.querySelectorAll("span")[2].innerHTML = "+"
+      e.parentElement.className = ""
+    })
+    panel.style.maxHeight = panel.scrollHeight + "px";
+    e.classList.add("active_asks")
+    e.querySelectorAll("span")[2].innerHTML = "-"
+    e.parentElement.className = "active_asks_parent"
+
+  }
+}

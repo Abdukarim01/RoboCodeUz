@@ -300,6 +300,12 @@ body::-webkit-scrollbar-thumb:hover {
   transform: rotate(0deg) !important;
 }
 
+.open_modal{
+  transform: translateY(0%) !important;
+}
+
+
+
 /* start max-1300 */
 @media (max-width: 1300px){
   .navbar_right ul li{

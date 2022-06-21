@@ -245,6 +245,30 @@ body::-webkit-scrollbar-thumb:hover {
   width: 35px !important;
 }
 
+.section_lines{
+  margin-top:80px;
+  width: 100%;
+  height:22.5vw;
+  background-image: url(../../images/mainpage/main/lines.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_lines img{
+  width:11.9%;
+}
+
+.section_lines p{
+  font-family: robocode;
+  color: white;
+  font-size:60px;
+  font-weight: bolder;
+}
 
 .for_navbar_section1{top:-100%;position: fixed; }
 
@@ -341,7 +365,14 @@ body::-webkit-scrollbar-thumb:hover {
 /* end max-1300 */
 
 /* start max-1200 */
-@media (max-width:  1200px){}
+@media (max-width:  1200px){
+  .section_lines p{
+    font-size:50px;
+  }
+  .section_lines img{
+    width:170px;
+  }
+}
 /* end max-1200 */
 
 /* start max-1100 */
@@ -420,7 +451,18 @@ body::-webkit-scrollbar-thumb:hover {
 /* end max-992 */
 
 /* start max-768 */
-@media (max-width: 768px){}
+@media (max-width: 768px){
+  .section_lines p{
+    margin-top:5px;
+    font-size:30px;
+  }
+  .section_lines img{
+    width:130px;
+  }
+  .section_lines{
+    height:250px;
+  }
+}
 /* end max-768 */
 
 /* start max-668 */
@@ -447,6 +489,10 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .footer_nav_fields ul li:nth-child(1){
     font-size:24px;
+  }
+  .section_lines{
+    height:200px;
+    margin-top:50px;
   }
 }
 /* end max-576 */
@@ -533,6 +579,9 @@ body::-webkit-scrollbar-thumb:hover {
   .navbar_right ul li a{
     padding:10px 14px;
   }
+  .section_lines p{
+		font-size:70px;
+  }
  }
 /* end min-1650 */
 
@@ -553,5 +602,8 @@ body::-webkit-scrollbar-thumb:hover {
   .navbar_right ul li a{
     padding:12px 15px;
   }
+  .section_lines p{
+		font-size:80px;
+	}
 }
 /* end min-1900 */
